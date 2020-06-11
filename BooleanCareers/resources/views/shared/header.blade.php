@@ -9,7 +9,7 @@
 <body>
     <header class="main-header">
         <nav class="navbar">
-            <a href="" class="navbar-brand">-->LOGO BOOLEAN<---</a>
+        <a href="{{ asset('css/app.css') }}" class="navbar-brand">-->LOGO BOOLEAN<---</a>
             <ul>
                 <li><a href="{{ route ('static-page.home') }}">home</a></li>
                 <li><a href="">corso</a></li>
