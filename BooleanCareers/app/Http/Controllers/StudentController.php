@@ -25,7 +25,25 @@ class StudentController extends Controller
      */
     public function show($id)
     {
+        $student = $this->serachStudent($id, $this->students);
+        if ( ! $student ) {
+            abort(404);
+        }
+        return view('students.show');
+    }
 
+    /**
+     * UTILITIES
+     */
+
+    //CHECK ID EXIST
+    private function serachStudent($id, $array) {
+        foreach ($array as $student) {
+            if($student['id'] == $id) {
+                return $student;
+            }
+        }
+        return false;
     }
     
 }
