@@ -29,7 +29,7 @@ class StudentController extends Controller
         if ( ! $student ) {
             abort(404);
         }
-        return view('students.show');
+        return view( 'students.show', compact('student') );
     }
 
     /**
