@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laravel Boolean</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
     <header class="main-header">
         <nav class="navbar">
-        <a href="{{ asset('css/app.css') }}" class="navbar-brand">-->LOGO BOOLEAN<---</a>
+        <a href="#" class="navbar-brand">LOGO BOOLEAN</a>
             <ul>
                 <li><a href="{{ route ('static-page.home') }}">home</a></li>
                 <li><a href="">corso</a></li>

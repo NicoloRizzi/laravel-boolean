@@ -1,3 +1,5 @@
+/* COLORS */
+
 * {
   margin: 0;
   padding: 0;
@@ -26,5 +28,36 @@ p {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 1rem 4rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar .navbar-brand {
+  text-transform: uppercase;
+  color: darkblue;
+  text-decoration: none;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: darkblue;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  border-bottom-color: lightgreen;
 }
 
