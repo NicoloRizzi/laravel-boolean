@@ -12,9 +12,10 @@
         <nav class="navbar">
         <a href="#" class="navbar-brand">LOGO BOOLEAN</a>
             <ul>
-                <li><a href="{{ route ('static-page.home') }}">home</a></li>
+                <li><a 
+                    @if (Request:: route()->getName() == 'static-page.home') class="active" @endif href="{{ route ('static-page.home') }}">home</a></li>
                 <li><a href="">corso</a></li>
-                <li><a href="{{ route ('student.index') }}">dopo il corso</a></li>
+                <li><a @if (Request:: route()->getName() == 'static-page.home') class="active" @endif  href="{{ route ('student.index') }}">dopo il corso</a></li>
                 <li><a href="">lezione gratuita</a></li>
                 <li><a href="">assumi i nostri studenti</a></li>
                 <li><a href="">candidati ora</a></li>
