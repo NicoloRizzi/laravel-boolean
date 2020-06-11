@@ -93,12 +93,14 @@ class StudentController extends Controller
             ],
         ];
     }
+
     /**
      * MAIN PAGE STUDENT
      */
     public function index()
     {
-        return view('students.index');
+        $students = $this->students;
+        return view('students.index', compact('students'));
     }
 
     /**
