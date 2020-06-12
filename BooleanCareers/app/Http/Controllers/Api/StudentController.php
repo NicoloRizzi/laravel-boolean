@@ -11,7 +11,8 @@ class StudentController extends Controller
      * STUDENT FILTERED BY GENDER ENDPOINT
      */
     public function gender (Request $request) {
-        
+        $student = config('students.students');
+        $genders = config('students.genders');
         //REQUEST DATA
         $gender = $request->input('filter');
     }
