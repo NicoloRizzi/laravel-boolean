@@ -23,9 +23,9 @@ class StudentController extends Controller
     /**
      * DETAIL PAGE STUDENT
      */
-    public function show($id)
+    public function show($slug)
     {
-        $student = $this->serachStudent($id, $this->students);
+        $student = $this->serachStudent($slug, $this->students);
         if ( ! $student ) {
             abort(404);
         }
@@ -36,10 +36,10 @@ class StudentController extends Controller
      * UTILITIES
      */
 
-    //CHECK ID EXIST
-    private function serachStudent($id, $array) {
+    //CHECK SLUG EXIST
+    private function serachStudent($slug, $array) {
         foreach ($array as $student) {
-            if($student['id'] == $id) {
+            if($student['slug'] == $slug) {
                 return $student;
             }
         }
