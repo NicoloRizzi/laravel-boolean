@@ -1,6 +1,10 @@
 @extends('layouts.main')
 
 @section('main-content')
+<div class="student-filter">
+    @dump($genders);
+    <select name="filter" id="filter" class="filter"></select>
+</div>
 <h1>I nostri ex studenti su LinkedIn</h1>
 <div class="students">
     @foreach($students as $student)
