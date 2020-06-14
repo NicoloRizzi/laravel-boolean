@@ -16092,7 +16092,10 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 $(document).ready(function () {
   //SETUP
   var filter = $('#filter'),
-      apiURL = window.location.protocol + '//' + window.location.host + '/api/students/genders';
+      apiURL = window.location.protocol + '//' + window.location.host + '/api/students/genders',
+      soruce = $('#').html(),
+      template = Handlebars.compile(soruce),
+      container = $('student');
   filter.on('change', function () {
     var gender = $(this).val();
     console.log(gender);
