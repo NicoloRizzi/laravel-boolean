@@ -16,8 +16,12 @@ $(document).ready(function () {
 
         })
         .done( function (res) {
-            console.log(res);
-            
+            if (res.response.length > 0) {
+                console.log(res.response);
+            } else {
+                console.log(res.error);
+                
+            }           
         })
         .fail( function () {
             console.error('API ERROR');

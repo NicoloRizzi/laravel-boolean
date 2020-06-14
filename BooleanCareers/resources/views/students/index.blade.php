@@ -28,4 +28,7 @@
     </a>
     @endforeach
 </div>
+
+@include('shared.handlebars.student')
+
 @endsection

@@ -1,4 +1,5 @@
 window.$ = require('jquery');
+window.Handlebars = require('handlebars');
 
 /* window._ = require('lodash'); */
 
