@@ -3,6 +3,7 @@
 @section('main-content')
 <div class="student-filter">
     <select name="filter" id="filter" class="filter">
+        {{-- PRINTING VALUE FROM ARRAY GENDER --}} 
         @foreach ($genders as $gender)
         <option value="{{ $gender }}">
             @if($gender == 'm') Uomo @elseif ($gender == 'f') Donna @else Tutti @endif

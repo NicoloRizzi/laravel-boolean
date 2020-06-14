@@ -11,8 +11,8 @@ class StudentController extends Controller
      * STUDENT FILTERED BY GENDER ENDPOINT
      */
     public function gender (Request $request) {
-        $students = config('students.students');
-        $genders = config('students.genders');
+        $students = config('students.students'); // ARRAY STUDENTI 
+        $genders = config('students.genders'); // ARRAY M,F,ALL
         //REQUEST DATA
         $gender = $request->input('filter');
 
@@ -35,6 +35,7 @@ class StudentController extends Controller
         } else {
             $result['error'] = 'Filter not allowed';
         }
+        
         return response()->json($result);
     }
 
