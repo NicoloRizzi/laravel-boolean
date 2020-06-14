@@ -2,7 +2,7 @@
 
 @section('main-content')
 <div class="student-filter">
-    <select name="filter" id="filter" class="filter">
+    <select name="filter" id="filter">
         {{-- PRINTING VALUE FROM ARRAY GENDER --}} 
         @foreach ($genders as $gender)
         <option value="{{ $gender }}">
