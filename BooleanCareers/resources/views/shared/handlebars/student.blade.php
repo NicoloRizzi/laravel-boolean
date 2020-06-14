@@ -1,5 +1,5 @@
 <script id="student-template" type="text/x-handlebars-template">
-    <a href="#" class="student">
+<a href=" {{ url('students/show') }}/@{{ slug }}" class="student">
         <header>
         <img class="img-student" src="@{{ img }}" alt="@{{ nome }}">
             <div class="info">
