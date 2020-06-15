@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
@@ -47,9 +48,18 @@ p {
   text-decoration: none;
 }
 
+.navbar .navbar-brand .logo-header {
+  width: 200px;
+  border-style: none;
+}
+
 .navbar ul {
   display: flex;
   list-style: none;
+}
+
+.navbar ul li {
+  padding: 0 10px;
 }
 
 .navbar ul li a {
@@ -65,6 +75,13 @@ p {
 .navbar ul li a.active,
 .navbar ul li a:hover {
   border-bottom-color: lightgreen;
+}
+
+.navbar .btn {
+  background-color: #73D462;
+  border-radius: 5px;
+  color: #ffffff;
+  border-bottom: none;
 }
 
 .students {
@@ -90,5 +107,11 @@ p {
 
 .students .img-student {
   max-width: 200px;
+}
+
+.jumbo-text h1 {
+  font-size: 58px;
+  color: #1B3C59;
+  font-weight: 300;
 }
 

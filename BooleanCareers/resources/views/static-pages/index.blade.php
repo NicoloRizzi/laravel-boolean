@@ -3,7 +3,7 @@
 @section('main-content')
     <div class="jumbotron">
         <div class="jumbo-text">
-            <h2>Diventa Sviluppatore Web</h2>
+            <h1>Diventa <b>Sviluppatore Web</b></h1>
             <p><b>Trasformiamo la tua passione in una carriera. Se non trovi lavoro, ti rimborsiamo.</b></p>
             <ul>
                 <li><b>6 mesi</b> di corso intensivo online in diretta</li>
