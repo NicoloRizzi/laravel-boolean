@@ -1,5 +1,23 @@
-.jumbo-text h1 {
-    font-size:58px ;
+.jumbotron {
+    display: flex;
+}
+.jumbo-text{
+    h1 {
+    font-size:58.5px ;
     color: $dark-blue;
     font-weight: 300;
+    text-transform: uppercase;
+    b {
+        font-weight: 700;
+    }
+    }
+    h4 {
+        font-size: 22px;
+        font-weight: 700px;
+        color: $dark-blue;
+    }
+}
+
+.jumbo-img .pc-gif {
+        width: 500px;
 }
